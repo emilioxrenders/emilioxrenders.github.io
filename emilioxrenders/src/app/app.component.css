@@ -10,6 +10,18 @@ mat-toolbar {
   font-size: 1.1em;
 }
 
+.nav-wrap a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
 .logo {
   font-size: 2.1em;
   font-weight: 400;
@@ -24,29 +36,29 @@ mat-toolbar {
 
 /* COMPONENTS */
 
-.land-page {
+#land-page {
   height: 100vh;
 }
 
-.about-page {
+#about-page {
   padding: 100px 120px;
   background-color: #598759;
   color: #fff;
   text-align: center;
 }
 
-.skills-page {
+#skills-page {
   padding: 100px 120px;
 }
 
-.work-page {
+#work-page {
   padding: 100px 60px;
   background-color: #598759;
   color: #fff;
   text-align: center;
 }
 
-.contact-page {
+#contact-page {
   padding: 100px 120px;
   background-color: #212121;
   color: #fff;

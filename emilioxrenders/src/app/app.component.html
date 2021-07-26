@@ -1,30 +1,30 @@
-<section class="land-page">
-  <div>
+<section id="land-page">
+  <div class="nav-wrap">
     <mat-toolbar color="primary">
-      <span class="logo">EXR</span>
+      <a pageScroll [pageScrollDuration]="350" [pageScrollOffset]="62" href="#land-page" class="logo">EXR</a>
       <div class="nav">
-        <a>Home</a>
-        <a>About</a>
-        <a>Work</a>
-        <a>Contact</a>
+        <a pageScroll [pageScrollDuration]="350" [pageScrollOffset]="62" href="#land-page">Home</a>
+        <a pageScroll [pageScrollDuration]="350" [pageScrollOffset]="62" href="#about-page">About</a>
+        <a pageScroll [pageScrollDuration]="350" [pageScrollOffset]="62" href="#work-page">Work</a>
+        <a pageScroll [pageScrollDuration]="350" [pageScrollOffset]="62" href="#contact-page">Contact</a>
       </div>
     </mat-toolbar>
   </div>
   <app-home></app-home>
 </section>
 
-<section class="about-page">
+<section id="about-page">
   <app-about></app-about>
 </section>
 
-<section class="skills-page">
+<section id="skills-page">
   <app-skills></app-skills>
 </section>
 
-<section class="work-page">
+<section id="work-page">
   <app-work></app-work>
 </section>
 
-<section class="contact-page">
+<section id="contact-page">
   <app-contact></app-contact>
 </section>

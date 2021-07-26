@@ -10,6 +10,11 @@
   z-index: -1;
 }
 
+.home-border {
+  padding-bottom: 30px;
+  border-bottom: 2px solid #598759;
+}
+
 .title-text {
   position: absolute;
   display: flex;
@@ -20,6 +25,7 @@
   right: 0;
   top: 0;
   bottom: 0;
+  z-index: -1;
 }
 
 .title-text h1 {
