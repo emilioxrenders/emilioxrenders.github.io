@@ -1,0 +1,43 @@
+.skill-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.design {
+  width: 50%;
+  border: 1.5px solid #598759;
+  border-bottom: none;
+  border-top: none;
+  border-left: none;
+}
+
+.develop {
+  width: 50%;
+}
+
+mat-icon {
+  text-align: center;
+  color: #598759;
+  font-size: 4em;
+  height: auto;
+  width: auto;
+}
+
+.skill-container h3 {
+  font-size: 2em;
+  margin-bottom: 45px;
+  margin-top: 0;
+}
+
+.skill-container h4 {
+  font-size: 1.1em;
+}
+
+.skill-margin {
+  margin: 45px 0 55px;
+}
+
+.skill-margin-btm {
+  margin-bottom: 0;
+}

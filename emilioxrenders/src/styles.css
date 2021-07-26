@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url("https://use.typekit.net/xwl0bqg.css");
+span, a {}
+
+html, body {
+  height: 100%;
+  font-family: 'Hatch', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
