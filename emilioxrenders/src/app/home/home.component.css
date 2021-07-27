@@ -58,4 +58,7 @@
   .home-border {
     width: 65%;
   }
+  .background {
+    height: 100vh;
+  }
 }
