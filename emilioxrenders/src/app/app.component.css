@@ -20,12 +20,14 @@ mat-toolbar {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 99;
 }
 
 .logo {
   font-size: 2.1em;
   font-weight: 400;
   margin: 15px 0;
+  z-index: 99;
 }
 
 .nav {
@@ -63,4 +65,78 @@ mat-toolbar {
   background-color: #212121;
   color: #fff;
   text-align: center;
+}
+
+/* MOBILE NAVIGATION */
+
+.mobile-nav {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* MOBILE NAVIGATION */
+  .nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: flex;
+    width: 100%;
+  }
+  .logo {
+    position: absolute;
+    left: 30px;
+    top: 0;
+    bottom: 0;
+  }
+  mat-expansion-panel-header {
+    padding: 0;
+  }
+  mat-expansion-panel {
+    top: 0;
+    right: 0;
+    background-color: #212121;
+    width: 100%;
+    text-align: center;
+    margin: 6px 0;
+  }
+  mat-expansion-panel a {
+    font-family: 'Hatch', sans-serif;
+    font-size: 1.3em;
+  }
+  mat-expansion-panel p {
+    margin: 60px 0;
+  }
+  mat-panel-title {
+    display: flex;
+    justify-content: flex-end;
+    color: #fff;
+    margin: 0;
+  }
+  .menu-icon {
+    font-size: 3em;
+    width: auto;
+    height: auto;
+  }
+  /* PAGES PADDING */
+  mat-toolbar {
+    padding: 0 30px;
+  }
+  #about-page {
+    padding: 60px 30px;
+  }
+  #skills-page {
+    padding: 60px 30px;
+  }
+  #work-page {
+    padding: 60px 30px;
+    background-color: #598759;
+    color: #fff;
+    text-align: center;
+  }
+  #contact-page {
+    padding: 60px 30px;
+    background-color: #212121;
+    color: #fff;
+    text-align: center;
+  }
 }

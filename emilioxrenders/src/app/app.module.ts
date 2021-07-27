@@ -15,6 +15,8 @@ import { faLinkedinIn, faGithub, fab } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope, fas } from '@fortawesome/free-solid-svg-icons';
 import { ContactComponent } from './contact/contact.component';
 import { NgxPageScrollModule } from 'ngx-page-scroll';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { NgxPageScrollModule } from 'ngx-page-scroll';
     MatToolbarModule,
     MatIconModule,
     FontAwesomeModule,
-    NgxPageScrollModule
+    NgxPageScrollModule,
+    MatExpansionModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

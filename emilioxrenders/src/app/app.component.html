@@ -8,6 +8,24 @@
         <a pageScroll [pageScrollDuration]="350" [pageScrollOffset]="62" href="#work-page">Work</a>
         <a pageScroll [pageScrollDuration]="350" [pageScrollOffset]="62" href="#contact-page">Contact</a>
       </div>
+      <div class="mobile-nav">
+        <mat-expansion-panel hideToggle #mep="matExpansionPanel">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <mat-icon class="menu-icon" aria-hidden="false" aria-label="icon">menu
+              </mat-icon>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p><a (click)="mep.expanded = false;" pageScroll [pageScrollDuration]="350" [pageScrollOffset]="60"
+              href="#land-page">Home</a></p>
+          <p><a (click)="mep.expanded = false;" pageScroll [pageScrollDuration]="350" [pageScrollOffset]="60"
+              href="#about-page">About</a></p>
+          <p><a (click)="mep.expanded = false;" pageScroll [pageScrollDuration]="350" [pageScrollOffset]="60"
+              href="#work-page">Work</a></p>
+          <p><a (click)="mep.expanded = false;" pageScroll [pageScrollDuration]="350" [pageScrollOffset]="60"
+              href="#contact-page">Contact</a></p>
+        </mat-expansion-panel>
+      </div>
     </mat-toolbar>
   </div>
   <app-home></app-home>

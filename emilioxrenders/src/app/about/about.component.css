@@ -7,3 +7,12 @@
   font-size: 1.1em;
   margin: 0;
 }
+
+@media (max-width: 768px) {
+  .about-text h2 {
+    font-size: 2.6em;
+  }
+  .about-text p {
+    font-size: 1em;
+  }
+}

@@ -41,3 +41,32 @@ mat-icon {
 .skill-margin-btm {
   margin-bottom: 0;
 }
+
+@media (max-width: 768px) {
+  .skill-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .design {
+    width: 100%;
+    border: 1.5px solid #598759;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    padding: 0 0 40px;
+  }
+  .develop {
+    width: 100%;
+    padding: 40px 0 0;
+  }
+  .skill-margin {
+    margin: 30px 0 40px;
+  }
+  .skill-container h3 {
+    margin-bottom: 30px;
+  }
+  mat-icon {
+    font-size: 3.5em;
+  }
+}
