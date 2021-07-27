@@ -90,14 +90,21 @@ mat-toolbar {
   }
   mat-expansion-panel-header {
     padding: 0;
+    background-color: #212121!important;
+  }
+  mat-expansion-panel-header:hover {
+    background-color: #212121!important;
   }
   mat-expansion-panel {
     top: 0;
     right: 0;
-    background-color: #212121;
+    background-color: #212121!important;
     width: 100%;
     text-align: center;
     margin: 6px 0;
+  }
+  mat-expansion-panel:hover {
+    background-color: #212121!important;
   }
   mat-expansion-panel a {
     font-family: 'Hatch', sans-serif;
@@ -109,13 +116,14 @@ mat-toolbar {
   mat-panel-title {
     display: flex;
     justify-content: flex-end;
-    color: #fff;
     margin: 0;
+    background-color: #212121!important;
   }
   .menu-icon {
     font-size: 3em;
     width: auto;
     height: auto;
+    color: #fff;
   }
   /* PAGES PADDING */
   mat-toolbar {
