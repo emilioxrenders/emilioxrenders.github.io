@@ -33,7 +33,7 @@ mat-toolbar {
 .nav {
   display: flex;
   justify-content: space-between;
-  width: 55%;
+  width: 65%;
 }
 
 /* COMPONENTS */
