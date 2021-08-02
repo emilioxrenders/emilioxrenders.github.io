@@ -1,13 +1,15 @@
-<section id="land-page">
+<section id="land-page" #target1>
   <div class="nav-wrap">
     <mat-toolbar color="primary">
-      <a pageScroll [pageScrollDuration]="350" [pageScrollOffset]="62" href="#land-page" class="logo">EXR</a>
+      <a (click)="scrollToElement(target1)" class="logo">EXR</a>
       <div class="nav">
-        <a pageScroll [pageScrollDuration]="350" [pageScrollOffset]="62" href="#land-page">Home</a>
-        <a pageScroll [pageScrollDuration]="350" [pageScrollOffset]="62" href="#about-page">About</a>
-        <a pageScroll [pageScrollDuration]="350" [pageScrollOffset]="62" href="#work-page">Work</a>
-        <a pageScroll [pageScrollDuration]="350" [pageScrollOffset]="62" href="#contact-page">Contact</a>
+        <a (click)="scrollToElement(target1)">Home</a>
+        <a (click)="scrollToElement(target2)">About</a>
+        <a (click)="scrollToElement(target3)">Skills</a>
+        <a (click)="scrollToElement(target4)">Work</a>
+        <a (click)="scrollToElement(target5)">Contact</a>
       </div>
+
       <div class="mobile-nav">
         <mat-expansion-panel mat-elevation-z0 hideToggle #mep="matExpansionPanel">
           <mat-expansion-panel-header>
@@ -16,14 +18,11 @@
               </mat-icon>
             </mat-panel-title>
           </mat-expansion-panel-header>
-          <p><a (click)="mep.expanded = false;" pageScroll [pageScrollDuration]="350" [pageScrollOffset]="60"
-              href="#land-page">Home</a></p>
-          <p><a (click)="mep.expanded = false;" pageScroll [pageScrollDuration]="350" [pageScrollOffset]="60"
-              href="#about-page">About</a></p>
-          <p><a (click)="mep.expanded = false;" pageScroll [pageScrollDuration]="350" [pageScrollOffset]="60"
-              href="#work-page">Work</a></p>
-          <p><a (click)="mep.expanded = false;" pageScroll [pageScrollDuration]="350" [pageScrollOffset]="60"
-              href="#contact-page">Contact</a></p>
+          <p><a (click)="mep.expanded = false;" (click)="scrollToElement(target1)">Home</a></p>
+          <p><a (click)="mep.expanded = false;" (click)="scrollToElement(target2)">About</a></p>
+          <p><a (click)="mep.expanded = false;" (click)="scrollToElement(target3)">Skills</a></p>
+          <p><a (click)="mep.expanded = false;" (click)="scrollToElement(target4)">Work</a></p>
+          <p><a (click)="mep.expanded = false;" (click)="scrollToElement(target5)">Contact</a></p>
         </mat-expansion-panel>
       </div>
     </mat-toolbar>
@@ -31,18 +30,18 @@
   <app-home></app-home>
 </section>
 
-<section id="about-page">
+<section id="about-page" #target2>
   <app-about></app-about>
 </section>
 
-<section id="skills-page">
+<section id="skills-page" #target3>
   <app-skills></app-skills>
 </section>
 
-<section id="work-page">
+<section id="work-page" #target4>
   <app-work></app-work>
 </section>
 
-<section id="contact-page">
+<section id="contact-page" #target5>
   <app-contact></app-contact>
 </section>

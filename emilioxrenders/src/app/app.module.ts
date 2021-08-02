@@ -14,9 +14,9 @@ import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontaweso
 import { faLinkedinIn, faGithub, fab } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, fas } from '@fortawesome/free-solid-svg-icons';
 import { ContactComponent } from './contact/contact.component';
-import { NgxPageScrollModule } from 'ngx-page-scroll';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatButtonModule } from '@angular/material/button';
+import * as smoothscroll from "smoothscroll-polyfill";
 
 @NgModule({
   declarations: [
@@ -34,7 +34,6 @@ import { MatButtonModule } from '@angular/material/button';
     MatToolbarModule,
     MatIconModule,
     FontAwesomeModule,
-    NgxPageScrollModule,
     MatExpansionModule,
     MatButtonModule
   ],
@@ -45,5 +44,6 @@ export class AppModule {
   constructor(private library: FaIconLibrary) {
     library.addIconPacks(fab, fas);
     library.addIcons(faGithub, faLinkedinIn, faEnvelope);
+    smoothscroll.polyfill();
   }
 }
