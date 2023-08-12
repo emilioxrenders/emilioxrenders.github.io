@@ -20,9 +20,18 @@
         <div class="header">
             <div class="flex justify-between align-center h-100">
                 <a href="index.html" class="caveat f-36 text-decoration-none black">Emilio Renders</a>
-                <div class="">
+                <div class="d-desktop">
                     <a href="/" class="text-decoration-none black mr-50 underline-active">Home</a>
                     <a href="work.html" class="text-decoration-none black underline">Work</a>
+                </div>
+
+                <div class="d-mobile mobile-button-open" id="mobile-button-open">
+                    <img class="nav-icon relative" src="images/nav-open.svg" alt="Nav">
+
+                    <div class="mobile-menu padding flex flex-column gap-30">
+                        <a href="/" class="text-decoration-none black underline-active w-fit">Home</a>
+                        <a href="work.html" class="text-decoration-none black underline w-fit">Work</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -71,5 +80,7 @@
             </div>
         </div>
     </section>
+    
+    <script src="script.js"></script>
 </body>
 </html>
