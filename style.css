@@ -353,11 +353,9 @@ p {
     }
 }
 
-@media screen and (min-width: 1029px) {
-    .blog-inner {
-        width: 83.33333333%;
-        margin: auto;
-    }
+.blog-inner {
+    max-width: 1028px;
+    margin: auto;
 }
 
 /* LINE */
