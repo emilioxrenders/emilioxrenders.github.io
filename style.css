@@ -134,6 +134,20 @@ p {
     font-size: 36px;
 }
 
+@media screen and (max-width: 576px) {
+    .f-28 {
+            font-size: 26px;
+        }
+    
+    .f-32 {
+        font-size: 30px;
+    }
+
+    .f-36 {
+        font-size: 32px;
+    }
+}
+
 .black {
     color: #000;
 }
@@ -154,6 +168,10 @@ p {
     .d-desktop {
         display: none;
     }
+}
+
+.hidden {
+    display: none;
 }
 
 /* FLEXBOX */
