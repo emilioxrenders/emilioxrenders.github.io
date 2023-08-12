@@ -172,6 +172,10 @@ p {
     text-decoration: none;
 }
 
+.text-decoration-line {
+    text-decoration: underline;
+}
+
 /* DISPLAY */
 
 @media screen and (min-width: 769px) {
