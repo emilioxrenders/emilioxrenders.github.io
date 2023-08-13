@@ -27,6 +27,10 @@ p {
     padding: 0 30px;
 }
 
+.padding-small {
+    padding: 20px 30px;
+}
+
 .padding-page {
     padding: 50px 30px 100px 30px;
 }
@@ -42,6 +46,10 @@ p {
 
     .padding-page {
         padding: 50px 60px 100px 60px;
+    }
+
+    .padding-small {
+        padding: 20px 60px;
     }
 
     .padding-vertical {
@@ -139,13 +147,17 @@ p {
     font-weight: 400;
 }
 
+.f-14 {
+    font-size: 14px;
+}
+
 .f-18 {
     font-size: 18px;
     line-height: 26px;
 }
 
-.f-32 {
-    font-size: 32px;
+.f-30 {
+    font-size: 30px;
     line-height: 40px;
 }
 
@@ -153,9 +165,13 @@ p {
     font-size: 36px;
 }
 
+.bg-primary {
+    background-color: #F7F4F2;
+}
+
 @media screen and (max-width: 768px) {    
-    .f-32 {
-        font-size: 30px;
+    .f-30 {
+        font-size: 28px;
         line-height: 38px;
     }
 
@@ -315,11 +331,6 @@ p {
 
 .header {
     height: 80px;
-    background-color: #F7F4F2;
-}
-
-.header-home {
-    background-color: #F7F4F2;
 }
 
 /* NAV */
@@ -346,10 +357,6 @@ p {
 }
 
 /* BLOG */
-
-.blog-card {
-    background-color: #F7F4F2;
-}
 
 .header-image {
     height: 200px;
