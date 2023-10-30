@@ -7,6 +7,7 @@ body {
 
 h1,
 h2,
+h3,
 p {
     margin: 0;
 }
@@ -145,6 +146,14 @@ p {
 
 .fw-400 {
     font-weight: 400;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fs-italic {
+    font-style: italic;
 }
 
 .f-13 {
@@ -360,6 +369,10 @@ p {
 
 .header-image {
     height: 200px;
+}
+
+.blog-sub-header {
+    margin-bottom: 5px;
 }
 
 @media screen and (min-width: 769px) {
