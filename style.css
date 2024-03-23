@@ -293,9 +293,9 @@ p {
 }
 
 .col-image {
-    width: 350px;
     padding-bottom: 10px;
-    max-width: 400px;;
+    max-width: 400px;
+    width: 100%;
 }
 
 .col-image-inner {
@@ -311,10 +311,6 @@ p {
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
 
-    .col-image {
-        width: calc(100% - 10px);
-    }
-
     .col-blog {
         width: 100%;
     }
@@ -324,6 +320,10 @@ p {
     .wrap-blog {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+
+    .col-image {
+        width: 350px;
+    } 
 }
 
 @media screen and (min-width: 1024px) {
